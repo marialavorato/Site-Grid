@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#fundoazul {
+    background-color: #0c0169;
+    ;
+    width: 120%;
+    height: 110vh;
+}
+
+#fundoazul img {
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#txtfundoazul {
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+#txtfundoazul h1 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#txtfundoazul p {
+    margin-top: 3%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.8;
+    width: 76%;
+}
+
+#finalFundoAzul {
+    margin-top: 4%;
+}
+
+.Sayhello {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    min-width: 160px;
+    padding: 9px 10px;
+    margin-bottom: 10px;
+    margin-right: 28px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+#emailFundoazul {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+}
+
+#AboutParteBranca {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+#AboutParteBranca h1 {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #0b0072;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#AboutParteBranca p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+    color: #636363;
+    width: 90%;
+}
+
+#AboutParteBranca h2 {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2916e0;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+#porcentagens {
+    display: flex;
+    gap: 5%;
+}
+
+#porcentagens h4 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+
+}

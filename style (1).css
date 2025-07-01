@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 90px 1fr;
+}
+
+#naveg {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+
+}
+
+#menu {
+    background-color: black;
+}
+
+#menu svg {
+    fill: white;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+#check {
+    margin-top: 1.7%;
+    position: absolute;
+    width: 5%;
+    height: 20px;
+    opacity: 0;
+}
+
+aside {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -270px;
+    background-color: #ffffff;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+
+#check:checked~aside {
+    left: 0;
+}
+
+#check2 {
+    margin-top: 14%;
+    margin-left: 10%;
+    position: absolute;
+    width: 15%;
+    height: 20px;
+    opacity: 0;
+    z-index: 99;
+}
+
+#seta {
+    background-color: black;
+    position: absolute;
+    width: 35%;
+    height: 10vh;
+    display: inline-block;
+}
+
+#tulen {
+    position: absolute;
+    width: 65%;
+    background-color: #2916e0;
+    height: 10vh;
+    margin-left: 35%;
+}
+
+#tulen img {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+#paginas {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 120%;
+    text-align: center;
+    transition: 0.3s;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 80%;
+    text-decoration: none;
+}
+
+#paginas a {
+    display: block;
+    margin-bottom: 10%;
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+#paginas a:hover {
+    color: blue;
+}
+
+.txtazul {
+    color: blue !important;
+}
+
+#txtcopy {
+    font-size: 15px;
+    color: #636363;
+    line-height: 1.8;
+    width: 80%;
+    margin-left: 8%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+#sociais {
+    margin-top: 300%;
+    margin-left: 35%;
+}
+
+#sociais svg {
+    display: block;
+    margin-bottom: 80%;
+
+}
+
+
+
+#calango {
+    background-image: url(5.jpg.webp);
+    flex-grow: 7;
+    order: -1;
+}
+
+#mulher {
+    background-image: url(1.jpg.webp);
+}
+
+#cachorro {
+    background-image: url(2.jpg.webp);
+}
+
+#mar {
+    background-image: url(3.jpg.webp);
+}
+
+#carro {
+    background-image: url(4.jpg.webp);
+}
+
+#imagens {
+    display: flex;
+}
+
+.item-img {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-img:hover {
+    flex-grow: 7;
+}
+
+.item-img:hover~#calango {
+    flex-grow: 1;
+}
+
+.item-img:hover~#calango:hover {
+    flex-grow: 7;
+}
+
+.texto {
+    position: absolute;
+    text-wrap: nowrap;
+    color: white;
+    bottom: 25%;
+    left: 0;
+    opacity: 0;
+    margin-left: 3%
+}
+
+.item-img:hover .texto {
+    opacity: 1;
+    bottom: 5%;
+}
+
+.texto #People {
+    display: inline-block;
+    padding: 4px 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #2916e0;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.texto h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#author img {
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#author h4 {
+    font-weight: 600;
+    color: #fff;
+    padding-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+}
+
+
+/* About */
+
+#fundoazul {
+    background-color: #2916e0;
+    ;
+    width: 120%;
+    height: 110vh;
+}
+
+#fundoazul img {
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#txtfundoazul {
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+#txtfundoazul h1 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#txtfundoazul p {
+    margin-top: 3%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.8;
+    width: 76%;
+}
+
+#finalFundoAzul {
+    margin-top: 4%;
+}
+
+.Sayhello {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    min-width: 160px;
+    padding: 9px 10px;
+    margin-bottom: 10px;
+    margin-right: 28px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+#emailFundoazul {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+}
+
+#AboutParteBranca {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+#AboutParteBranca h1 {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2916e0;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#AboutParteBranca p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+    color: #636363;
+    width: 90%;
+}
+
+#AboutParteBranca h2 {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2916e0;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+#porcentagens {
+    display: flex;
+    gap: 5%;
+}
+
+#porcentagens h4 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+header h1 {
+    display: inline-block;
+    color: #252525;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-top: 1.7%;
+    margin-right: 50%;
+    font-family: "Montserrat", sans-serif;
+}
+
+header span {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #252525;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.selecionadoGallery {
+    color: #2916e0;
+}
+
+#areagallery {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 4%;
+    width: 96%;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 20%;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.gallery .item {
+    overflow: hidden;
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item4 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item6 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item8 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item9 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item10 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item11 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#contact {
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 20vh;
+    margin-left: 28%;
+    margin-top: 30%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#contact svg {
+    fill: blue;
+    width: 100px;
+    height: 5vh;
+
+    margin-bottom: 3%;
+}
+
+#contact span {
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+#contact div {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+#contact h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #252525;
+    font-weight: 500;
+}
+
+#loc svg {
+    margin-left: 20%;
+}
+
+#email_contact svg {
+    margin-left: 30%;
+}
+
+#time svg {
+    margin-left: 28%;
+}
+
+

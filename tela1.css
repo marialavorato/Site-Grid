@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 90px 1fr;
+}
+
+#naveg {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+
+}
+
+#menu {
+    background-color: black;
+}
+
+#menu svg {
+    fill: white;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+#check {
+    margin-top: 1.7%;
+    position: absolute;
+    width: 5%;
+    height: 20px;
+    opacity: 0;
+}
+
+aside {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -270px;
+    background-color: #ffffff;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+
+#check:checked~aside {
+    left: 0;
+}
+
+#check2 {
+    margin-top: 14%;
+    margin-left: 10%;
+    position: absolute;
+    width: 15%;
+    height: 20px;
+    opacity: 0;
+    z-index: 99;
+}
+
+#seta {
+    background-color: black;
+    position: absolute;
+    width: 35%;
+    height: 10vh;
+    display: inline-block;
+}
+
+#tulen {
+    position: absolute;
+    width: 65%;
+    background-color: #2916e0;
+    height: 10vh;
+    margin-left: 35%;
+}
+
+#tulen img {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+#paginas {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 120%;
+    text-align: center;
+    transition: 0.3s;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 80%;
+    text-decoration: none;
+}
+
+#paginas a {
+    display: block;
+    margin-bottom: 10%;
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+#paginas a:hover {
+    color: blue;
+}
+
+.txtazul {
+    color: blue !important;
+}
+
+#txtcopy {
+    font-size: 15px;
+    color: #636363;
+    line-height: 1.8;
+    width: 80%;
+    margin-left: 8%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+#sociais {
+    margin-top: 300%;
+    margin-left: 35%;
+}
+
+#sociais svg {
+    display: block;
+    margin-bottom: 80%;
+
+}
+
+
+
+#calango {
+    background-image: url(5.jpg.webp);
+    flex-grow: 7;
+    order: -1;
+}
+
+#mulher {
+    background-image: url(1.jpg.webp);
+}
+
+#cachorro {
+    background-image: url(2.jpg.webp);
+}
+
+#mar {
+    background-image: url(3.jpg.webp);
+}
+
+#carro {
+    background-image: url(4.jpg.webp);
+}
+
+#imagens {
+    display: flex;
+}
+
+.item-img {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-img:hover {
+    flex-grow: 7;
+}
+
+.item-img:hover~#calango {
+    flex-grow: 1;
+}
+
+.item-img:hover~#calango:hover {
+    flex-grow: 7;
+}
+
+.texto {
+    position: absolute;
+    text-wrap: nowrap;
+    color: white;
+    bottom: 25%;
+    left: 0;
+    opacity: 0;
+    margin-left: 3%
+}
+
+.item-img:hover .texto {
+    opacity: 1;
+    bottom: 5%;
+}
+
+.texto #People {
+    display: inline-block;
+    padding: 4px 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #2916e0;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.texto h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#author img {
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#author h4 {
+    font-weight: 600;
+    color: #fff;
+    padding-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+}

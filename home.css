@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: 0.45s;
+}
+
+.menu-wrapper {
+  width: 5%;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-switchdiv {
+  width: 100%;
+  background-color: #0f0f0f;
+  height: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-switchdiv2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  top: 30%;
+}
+
+.menu-switchdiv2svg1 {
+  fill: rgb(0, 0, 0);
+  width: 15%;
+}
+.menu-switchdiv2svg2 {
+  fill: rgb(0, 0, 0);
+  width: 23%;
+}
+.menu-switchdiv2svg3 {
+  fill: rgb(0, 0, 0);
+  width: 20%;
+}
+.menu-switchdiv2svg4 {
+  fill: rgb(0, 0, 0);
+  width: 20%;
+}
+
+.menu-switch {
+  fill: rgb(255, 255, 255);
+  width: 30%;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 90px 1fr;
+}
+
+#naveg {
+  display: grid;
+  grid-template-rows: 90px 1fr;
+}
+
+#menu {
+  background-color: black;
+}
+
+#calango {
+  background-image: url(5.jpg.webp);
+  flex-grow: 7;
+  order: -1;
+}
+
+#mulher {
+  background-image: url(1.jpg.webp);
+}
+
+#cachorro {
+  background-image: url(2.jpg.webp);
+}
+
+#mar {
+  background-image: url(3.jpg.webp);
+}
+
+#carro {
+  background-image: url(4.jpg.webp);
+}
+
+#imagens {
+  display: flex;
+  z-index: 9;
+}
+
+.item-img {
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-img:hover {
+  flex-grow: 7;
+}
+
+.item-img:hover ~ .item-img {
+  flex-grow: 1;
+}
+
+.item-img:hover ~ #calango:hover {
+  flex-grow: 7;
+}
+.author {
+  border-radius: 50%;
+}
+
+.texto {
+  position: absolute;
+  text-wrap: nowrap;
+  color: white;
+  bottom: 25%;
+  left: 5%;
+  opacity: 0;
+}
+
+.fontsize30px {
+  font-size: 70px;
+  margin-bottom: 17px;
+}
+
+.h4position {
+  position: relative;
+  left: 70px;
+  top: -45px;
+  font-size: 23px;
+}
+
+.People {
+  width: 80px;
+  height: 22px;
+  background-color: white;
+  font-weight: 600;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4%;
+  margin-bottom: 10px;
+  color: rgb(3, 3, 36);
+}
+
+.item-img:hover .texto {
+  opacity: 1;
+  bottom: 5%;
+}
+
+#check {
+    margin-top: 1.7%;
+    position: absolute;
+    width: 20%;
+    height: 30px;
+    opacity: 0;
+}
+
+aside {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -270px;
+    background-color: #ffffff;
+    z-index: -999;
+    transition: 0.5s;
+}
+
+
+#check:checked~aside {
+    left: 0;
+}
+
+#check2 {
+    margin-top: 14%;
+    margin-left: 10%;
+    position: absolute;
+    width: 15%;
+    height: 50px;
+    opacity: 0;
+    z-index: 99;
+}
+
+#seta {
+    background-color: black;
+    position: absolute;
+    width: 35%;
+    height: 20vh;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tulen {
+    position: absolute;
+    width: 65%;
+    background-color: #050033;
+    height: 10vh;
+    margin-left: 35%;
+}
+
+#tulen img {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+#paginas {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 120%;
+    text-align: center;
+    transition: 0.3s;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 80%;
+    text-decoration: none;
+}
+
+#paginas a {
+    display: block;
+    margin-bottom: 10%;
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+#paginas a:hover {
+    color: blue;
+}
+
+.txtazul {
+    color: rgb(1, 1, 68) !important;
+}
+
+#txtcopy {
+    font-size: 15px;
+    color: #636363;
+    line-height: 1.8;
+    width: 80%;
+    margin-left: 8%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
